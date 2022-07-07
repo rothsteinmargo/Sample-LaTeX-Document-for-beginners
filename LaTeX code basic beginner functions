@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}  %preamble
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+
+
+\title{Stefan Latex}
+\author{Margo Rothstein}
+\date{February 17, 2020}
+
+\begin{document}  %begin page
+
+%Headings
+\maketitle
+
+\section{Operations}
+
+\subsection{Math Mode}
+
+$sin^2(\theta)+cos^2(\theta)=1$
+\hspace{5pt}\\[5pt]
+Math Mode
+When you want to make math related thing, put it in \$\$ around it. \\
+Two backslashes $\backslash\backslash$ are used to go to the new line. \\
+To make more breaks, use $\backslash\backslash$[5pt], or how ever much you want to skip lines.
+
+\subsection{Exponents}
+For exponents, use \textbf{shift 6}. \\
+$x^4$, $x^6$, $x^{nq+b}$
+
+\subsection{Fractions}
+Use $\backslash\text{frac\{\}\{\}}$\\
+$\frac{1}{2}$, $\frac{2}{3}$, $\frac{x-4}{6-x^2}$
+
+\subsection{Align*}
+
+Align equal signs (or anything) with align*.\\
+Put \& in front of the things that you want to align.
+
+\begin{align*}
+5x^2+14x-3 &= 0\\
+(15x-1)(x+1) &= 0\\
+x=\frac{1}{15}\hspace{50pt}x&=-1
+\end{align*}
+
+
+\subsection{Square Roots}
+Use $\backslash\text{sqrt\{\}\{\}}$\\
+$\sqrt{4}$, $\sqrt{6-x}$
+
+\subsection{Subscripts}
+Use \textbf{shift}, then the 'dash' key (-).\\
+$x_1$, $x_2$, $x_{i+1}$, $x_{4n^2-1}$
+
+
+\section{Tables}
+
+\begin{tabular}{|c|c|c|} %number of columns
+\hline %horizontal lines
+1&2&3\\ \hline %use & to separate columns
+4&5&6\\ \hline
+\end{tabular}\\[30pt]
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multirow{3}{4em}{Multirow} &2&3 \\ \cline{2-3}
+ 
+ & 4& 5 \\ \cline{2-3}
+ 
+ &6  & 7 \\ \cline{2-3}
+\hline
+\end{tabular}\\[30pt]
+
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{Multicolumn}&x\\  \hline
+X&X&X\\
+\hline
+\end{tabular}
+
+
+
+
+\end{document}
